@@ -21,7 +21,7 @@
         </form>
         <br>
         <br>
-        <a href="index.jsp" class="btn btn-primary">Gerenciamento de Atores</a>
+        <a href="ator.jsp" class="btn btn-primary">Gerenciamento de Atores</a>
         </div>
 
 

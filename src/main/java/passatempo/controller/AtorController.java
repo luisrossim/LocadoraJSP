@@ -37,7 +37,7 @@ public class AtorController extends HttpServlet {
                 break;
         }
 
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("ator.jsp");
     }
 
     @Override
