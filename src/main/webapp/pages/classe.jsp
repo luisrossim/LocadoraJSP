@@ -15,17 +15,18 @@
         <form method="post" action="ClasseController?type=inserir">
             <label for="nome">Nome da Classe:</label>
             <input type="text" id="nome" name="nome">
-            <br>
+
             <label for="valor">Valor:</label>
             <input type="text" id="valor" name="valor">
-            <br>
+
             <label for="prazo_devolucao">Prazo de Devolução:</label>
             <input type="text" id="prazo_devolucao" name="prazo_devolucao">
 
             <button type="submit">Inserir</button>
-        </form>
-        <div class="container">
-            <table>
+        </form><br><br>
+
+        <div class="container border border-1">
+            <table class="table responsive-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -65,7 +66,7 @@
                             </td>
                             <td>
                                 <a type="button"
-                                    class="btn btn-primary"
+                                    class="btn btn-danger"
                                     href="ClasseController?type=excluir&id_classe=<%= classe.getId_classe() %>">
                                     Excluir
                                 </a>

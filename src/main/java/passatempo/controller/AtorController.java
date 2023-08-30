@@ -61,8 +61,8 @@ public class AtorController extends HttpServlet {
     private void alterar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id_ator");
         Ator ator = banco.findById(id);
-        System.out.println(ator.getNome());
-        System.out.println(ator.getId_ator());
+        //System.out.println(ator.getNome());
+        //System.out.println(ator.getId_ator());
         request.setAttribute("ator", ator);
         request.getRequestDispatcher("alterarAtor.jsp").forward(request, response);
     }

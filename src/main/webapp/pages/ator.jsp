@@ -16,9 +16,10 @@
             <label for="nome">Nome do Ator:</label>
             <input type="text" id="nome" name="nome">
             <button type="submit">Inserir</button>
-        </form>
-        <div class="container">
-            <table>
+        </form><br><br>
+
+        <div class="container border border-1">
+            <table class="table responsive-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -50,7 +51,7 @@
                             </td>
                             <td>
                                 <a type="button"
-                                    class="btn btn-primary"
+                                    class="btn btn-danger"
                                     href="AtorController?type=excluir&id_ator=<%= ator.getId_ator() %>">
                                     Excluir
                                 </a>
