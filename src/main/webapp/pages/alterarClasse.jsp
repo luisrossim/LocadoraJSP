@@ -9,17 +9,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <title>PassaTempo</title>
     </head>
-    <body class="bg-dark" data-bs-theme="dark">
-        <h2>Alterar Classe</h2>
+    <body class="bg-dark-subtle" data-bs-theme="dark">
+        <h2>Alterar Classe ${classe.getId_classe()}</h2>
 
         <form action="ClasseController?type=save" method="post">
             <input type="hidden" name="id_classe" value="${classe.getId_classe()}">
             <label for="nome">Nome da Classe:</label>
             <input type="text" id="nome" name="nome" value="${classe.getNome()}">
-            <br>
+
             <label for="valor">Valor:</label>
             <input type="text" id="valor" name="valor" value="${classe.getValor()}">
-            <br>
+
             <label for="prazo_devolucao">Prazo de Devolução:</label>
             <input type="text" id="prazo_devolucao" name="prazo_devolucao" value="${classe.getPrazo_devolucao()}">
 

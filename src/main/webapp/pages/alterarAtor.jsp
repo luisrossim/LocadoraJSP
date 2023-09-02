@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <title>PassaTempo</title>
     </head>
-    <body class="bg-dark" data-bs-theme="dark">
-        <h2>Alterar Ator</h2>
+    <body class="bg-dark-subtle" data-bs-theme="dark">
+        <h2>Alterar Ator ${ator.getId_ator()}</h2>
+
         </form>
         <div class="container">
         <form action="AtorController?type=save" method="post">
