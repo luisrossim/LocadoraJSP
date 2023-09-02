@@ -1,0 +1,26 @@
+.bac-moon {
+    background-image: url(../assets/gif3-home.gif);
+}
+
+.bac-moon::after {
+    content: "";
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 65%;
+    border-top: 0.5px solid black;
+    background-image: url(../assets/gif2-home.gif);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* background-color: white; */
+    transition: 0.4s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(.91,.26,0,.8);
+}
+
+.bac-moon:hover::after {
+    background-color: #16181b;
+    height: 100%;
+}
